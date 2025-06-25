@@ -1,0 +1,44 @@
+{
+  "name": "rehearsal-scheduler-server",
+  "version": "1.0.0",
+  "description": "Backend server for the Band Rehearsal Scheduler application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node src/db/migrations/migrate.js",
+    "seed": "node src/db/seeds/seed.js",
+    "test": "jest --runInBand",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "music",
+    "band",
+    "rehearsal",
+    "scheduler",
+    "api"
+  ],
+  "author": "DX AG",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
